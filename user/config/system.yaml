@@ -19,10 +19,10 @@ languages:
   http_accept_language: false
   override_locale: false
 home:
-  alias: /home
+  alias: /basics
   hide_in_urls: false
 pages:
-  theme: learn2-git-sync
+  theme: mytheme
   order:
     by: default
     dir: asc
@@ -78,8 +78,9 @@ pages:
     ignore_fields:
       - form
       - forms
+  markdown_extra: true
 cache:
-  enabled: true
+  enabled: false
   check:
     method: file
   driver: auto
@@ -93,20 +94,20 @@ cache:
     socket: false
 twig:
   cache: true
-  debug: true
+  debug: false
   auto_reload: true
   autoescape: false
   undefined_functions: true
   undefined_filters: true
   umask_fix: false
 assets:
-  css_pipeline: false
+  css_pipeline: true
   css_pipeline_include_externals: true
   css_pipeline_before_excludes: true
   css_minify: true
   css_minify_windows: false
   css_rewrite: true
-  js_pipeline: false
+  js_pipeline: true
   js_pipeline_include_externals: true
   js_pipeline_before_excludes: true
   js_minify: true
@@ -114,7 +115,7 @@ assets:
   collections:
     jquery: 'system://assets/jquery/jquery-2.x.min.js'
 errors:
-  display: '1'
+  display: '0'
   log: true
 debugger:
   enabled: false
@@ -132,10 +133,9 @@ media:
   unsupported_inline_types: {  }
   allowed_fallback_types: {  }
   auto_metadata_exif: false
-  upload_limit: 8388608
+  upload_limit: 33554432
 session:
   enabled: true
-  initialize: true
   timeout: 1800
   name: grav-site
   secure: true

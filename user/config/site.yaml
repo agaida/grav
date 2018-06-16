@@ -1,4 +1,4 @@
-title: Grav
+title: 'Learn2 with Git Sync'
 default_lang: en
 author:
   name: 'Alf Gaida'
@@ -6,12 +6,8 @@ author:
 taxonomies:
   - category
   - tag
+  - author
 metadata:
-  description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+  description: 'Learn2 with Git Sync'
 summary:
-  enabled: true
-  format: short
   size: 300
-  delimiter: '==='
-blog:
-  route: /blog

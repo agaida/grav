@@ -109,11 +109,11 @@ assets:                                          # Configuration for Assets Mana
     jquery: system://assets/jquery/jquery-2.x.min.js
 
 errors:
-  display: 1                                     # Display either (1) Full backtrace | (0) Simple Error | (-1) System Error
+  display: 0                                     # Display either (1) Full backtrace | (0) Simple Error | (-1) System Error
   log: true                                      # Log errors to /logs folder
 
 debugger:
-  enabled: true                                 # Enable Grav debugger and following settings
+  enabled: false                                 # Enable Grav debugger and following settings
   shutdown:
     close_connection: true                       # Close the connection before calling onShutdown(). false for debugging
 
@@ -144,5 +144,5 @@ gpm:
   releases: stable                               # Set to either 'stable' or 'testing'
   proxy_url:                                     # Configure a manual proxy URL for GPM (eg 127.0.0.1:3128)
   method: 'auto'                                 # Either 'curl', 'fopen' or 'auto'. 'auto' will try fopen first and if not available cURL
-  verify_peer: false                              # Sometimes on some systems (Windows most commonly) GPM is unable to connect because the SSL certificate cannot be verified. Disabling this setting might help.
+  verify_peer: true                              # Sometimes on some systems (Windows most commonly) GPM is unable to connect because the SSL certificate cannot be verified. Disabling this setting might help.
   official_gpm_only: true                        # By default GPM direct-install will only allow URLs via the official GPM proxy to ensure security
